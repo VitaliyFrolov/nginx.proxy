@@ -13,14 +13,12 @@
 
 ## How to start
 1. Copy this project to your VPS server 
-2. Make sure you have docker installed `Docker -v`
-3. Enter the command to build `make build-up`
+2. Add SSL certificates
+3. Make sure you have docker installed `Docker -v`
+4. Enter the command to build `make build-up`
 
 ## Example request
 ```
-curl -X POST http://your-vps-ip:3000 \
--H "Content-Type: application/json" \
--H "X-Target-Url: https://api.openai.com/v1/chat/completions" \
--d '{"model": "gpt-3.5-turbo", "messages": [{"role": "user", "content": "Hello!"}]}'
+curl -k -H "X-Target-Url: https://jsonplaceholder.typicode.com/posts/1" https://<host_name>:443 
 
 ```
