@@ -3,7 +3,7 @@
 ## Proxy server to bypass regional resource blocking
 
 ## Technologies:
-- Ngnx
+- Nginx
 - Docker
 
 ## Commands:
